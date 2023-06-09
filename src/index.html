@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="@@ENDERECO_DO_CSS">
+    <title>IMC-Calculo</title>
+</head>
+<body>
+    <main>
+        <h1>Calculadora de IMC</h1>
+        <form id="form-calculadora">
+            <div id="form-principal">
+                <label for="Nome">Seu Nome:</label>
+                <input type="text" id="Nome" required >
+                <label for="Idade">Sua Idade:</label>
+                <input type="number" id="Idade" required >
+                <label for="Altura">Sua Altura:</label>
+                <input type="text" id="Altura" required >
+                <label for="Peso">Seu Peso:</label>
+                <input type="text" id="Peso" required >
+            </div>
+            <button type="submit">Calcular IMC</button>
+        </form>
+        <div class="resultado">
+            O seu IMC é: <span id="resultado-valor"></span>
+        </div>
+        <div id="tabela">
+            <table border="1" bordercolor=#000>
+                <caption>VEJA A INTERPRETAÇÃO DO IMC</caption>
+                <thead>
+                    <tr>
+                        <th>IMC</th>
+                        <th>CLASSIFICAÇÃO</th>
+                        <th>OBESIDADE (GRAU)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>MENOR QUE 18,5</td>
+                        <td>MAGREZA</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>ENTRE 18,5 E 24,9</td>
+                        <td>NORMAL</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>ENTRE 25,0 E 29,9</td>
+                        <td>SOBREPESO</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>ENTRE 30,0 E 39,9</td>
+                        <td>OBESIDADE</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>MAIOR QUE 40,0</td>
+                        <td>OBESIDADE GRAVE</td>
+                        <td>3</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <script src="@@ENDERECO_DO_JS"></script>
+</body>
+</html>
